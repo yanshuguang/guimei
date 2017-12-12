@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>guimei</display-name>
+  <filter>
+  	<filter-name>loginFilter</filter-name>
+  	<filter-class>com.guimei.controller.filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>loginFilter</filter-name>
+  	<url-pattern>/page/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>loginFilter</filter-name>
+  	<url-pattern>/servlet/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <servlet-class>com.guimei.controller.user.UserLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserManagerServlet</servlet-name>
+    <servlet-class>com.guimei.controller.user.UserManagerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserDeleteServlet</servlet-name>
+    <servlet-class>com.guimei.controller.user.UserDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <servlet-class>com.guimei.controller.user.UserUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserModifyServlet</servlet-name>
+    <servlet-class>com.guimei.controller.user.UserModifyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserAddServlet</servlet-name>
+    <servlet-class>com.guimei.controller.user.UserAddServlet</servlet-class>
+  </servlet>
+  
+	<servlet>
+		<servlet-name>AnnouncementManageServlet</servlet-name>
+		<servlet-class>com.guimei.controller.announcement.AnnouncementManageServlet</servlet-class>
+	</servlet>
+	<servlet>
+	<servlet-name>AnnouncementModifyServlet</servlet-name>
+	<servlet-class>com.guimei.controller.announcement.AnnouncementModifyServlet</servlet-class>
+	</servlet>
+	<servlet>
+	<servlet-name>AnnouncementUpdateServlet</servlet-name>
+	<servlet-class>com.guimei.controller.announcement.AnnouncementUpdateServlet</servlet-class>
+	</servlet>
+	<servlet>
+	<servlet-name>AnnouncementAddServlet</servlet-name>
+	<servlet-class>com.guimei.controller.announcement.AnnouncementAddServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>AnnouncementDeleteServlet</servlet-name>
+    <servlet-class>com.guimei.controller.announcement.AnnouncementDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderQueryServlet</servlet-name>
+    <servlet-class>com.guimei.controller.order.OrderQueryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderUpdateServlet</servlet-name>
+    <servlet-class>com.guimei.controller.order.OrderUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderModifyServlet</servlet-name>
+    <servlet-class>com.guimei.controller.order.OrderModifyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderDeleteServlet</servlet-name>
+    <servlet-class>com.guimei.controller.order.OrderDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderQuerySubServlet</servlet-name>
+    <servlet-class>com.guimei.controller.order.OrderQuerySubServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Goods_detailManageServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_details.Goods_detailManageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Goods_detailModifyServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_details.Goods_detailModifyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Goods_detailDeleteServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_details.Goods_detailDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Goods_detailUpdateServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_details.Goods_detailUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Goods_categoryManageServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_category.Goods_categoryManageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Goods_categoryModifyServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_category.Goods_categoryModifyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Goods_categoryDeleteServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_category.Goods_categoryDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Goods_categoryUpdateServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_category.Goods_categoryUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Goods_categoryAddServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_category.Goods_categoryAddServlet</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>Goods_classAddServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_class.Goods_classAddServlet</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>Goods_classDeleteServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_class.Goods_classDeleteServlet</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>Goods_classManageServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_class.Goods_classManageServlet</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>Goods_classModifyServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_class.Goods_classModifyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Goods_classUpdateServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_class.Goods_classUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>loginServlet</servlet-name>
+  <servlet-class>com.guimei.controller.admin.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QueryBigClassServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_category.QueryBigClassServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>checkImage</servlet-name>
+  	<servlet-class>com.guimei.util.CheckImage</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>com.guimei.util.UploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CheckBigClassNameServlet</servlet-name>
+    <servlet-class>com.guimei.controller.goods_class.CheckBigClassNameServlet</servlet-class>
+  </servlet>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<servlet-mapping>
+	<servlet-name>checkImage</servlet-name>
+	<url-pattern>/checkImage</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>loginServlet</servlet-name>
+<url-pattern>/LoginServlet</url-pattern>
+
+</servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <url-pattern>/servlet/UserLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserManagerServlet</servlet-name>
+    <url-pattern>/servlet/UserManagerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserDeleteServlet</servlet-name>
+    <url-pattern>/servlet/UserDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <url-pattern>/servlet/UserUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserModifyServlet</servlet-name>
+    <url-pattern>/servlet/UserModifyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserAddServlet</servlet-name>
+    <url-pattern>/servlet/UserAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>AnnouncementManageServlet</servlet-name>
+  <url-pattern>/servlet/AnnouncementManageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AnnouncementModifyServlet</servlet-name>
+  	<url-pattern>/servlet/AnnouncementModifyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AnnouncementUpdateServlet</servlet-name>
+  	<url-pattern>/servlet/AnnouncementUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>AnnouncementAddServlet</servlet-name>
+  <url-pattern>/servlet/AnnouncementAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AnnouncementDeleteServlet</servlet-name>
+    <url-pattern>/servlet/AnnouncementDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderQueryServlet</servlet-name>
+    <url-pattern>/servlet/OrderQueryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderUpdateServlet</servlet-name>
+    <url-pattern>/servlet/OrderUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderModifyServlet</servlet-name>
+    <url-pattern>/servlet/OrderModifyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderDeleteServlet</servlet-name>
+    <url-pattern>/servlet/OrderDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderQuerySubServlet</servlet-name>
+    <url-pattern>/servlet/OrderQuerySubServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_detailManageServlet</servlet-name>
+    <url-pattern>/servlet/Goods_detailManageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_detailModifyServlet</servlet-name>
+    <url-pattern>/servlet/Goods_detailModifyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_detailDeleteServlet</servlet-name>
+    <url-pattern>/servlet/Goods_detailDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_detailUpdateServlet</servlet-name>
+    <url-pattern>/servlet/Goods_detailUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_categoryManageServlet</servlet-name>
+    <url-pattern>/servlet/Goods_categoryManageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_categoryModifyServlet</servlet-name>
+    <url-pattern>/servlet/Goods_categoryModifyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_categoryDeleteServlet</servlet-name>
+    <url-pattern>/servlet/Goods_categoryDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_categoryUpdateServlet</servlet-name>
+    <url-pattern>/servlet/Goods_categoryUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_categoryAddServlet</servlet-name>
+    <url-pattern>/servlet/Goods_categoryAddServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Goods_classAddServlet</servlet-name>
+    <url-pattern>/servlet/Goods_classAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_classDeleteServlet</servlet-name>
+    <url-pattern>/servlet/Goods_classDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_classManageServlet</servlet-name>
+    <url-pattern>/servlet/Goods_classManageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_classModifyServlet</servlet-name>
+    <url-pattern>/servlet/Goods_classModifyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_classUpdateServlet</servlet-name>
+    <url-pattern>/servlet/Goods_classUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryBigClassServlet</servlet-name>
+    <url-pattern>/servlet/QueryBigClassServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/servlet/UploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckBigClassNameServlet</servlet-name>
+    <url-pattern>/servlet/CheckBigClassNameServlet</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+   
+  </welcome-file-list>
+</web-app>
